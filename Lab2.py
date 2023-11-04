@@ -1,24 +1,28 @@
 def display_main_menu():
     print("Enter some numbers separated by commas (e.g. 5, 67, 32)")
 
+
 def get_user_input():
     i = input()
     splitinput = i.split(",")
     num_list = [float(item) for item in splitinput]
     return num_list
 
+
 def find_min_max(l):
     maxtemp = max(l)
     mintemp = min(l)
     return maxtemp, mintemp
 
+
 def sort_temperature(l):
     s = sorted(l)
     return s
 
+
 def calc_average(l):
     average = sum(l)/len(l)
-    return average
+    return round(average, 2)
 
 
 def calc_median_temperature(s):
