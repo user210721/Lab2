@@ -9,7 +9,7 @@ def get_user_input():
     listinputs = [float(x) for x in listinputs]
 
     return listinputs
-
+4, 66, 94, 3
           
 def calc_average(list):
     total = sum(list)
